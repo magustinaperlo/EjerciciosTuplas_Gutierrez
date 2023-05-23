@@ -8,10 +8,8 @@ numeros = (1, 2, 2, 3, 4, 9, 7, 6, 3, 2, 6, 6, 2, 3, 4, 2, 4, 6, 4, 6, 3, 7 ,6, 
 while True:
     num = int(input("Ingrese numero: "))
     print(numeros.count(num))    
-
-    #sugerencia 
-    
-    numeros = (1, 2, 2, 3, 4, 9, 7, 6, 3, 2, 6, 6, 2, 3, 4, 2, 4, 6, 4, 6, 3, 7, 6, 7, 8, 9, 10, 11, 1, 10, 10)
+#sugerencia
+numeros = (1, 2, 2, 3, 4, 9, 7, 6, 3, 2, 6, 6, 2, 3, 4, 2, 4, 6, 4, 6, 3, 7, 6, 7, 8, 9, 10, 11, 1, 10, 10)
 
 while True:
     try:
@@ -20,7 +18,12 @@ while True:
         if num == 0:
             break
         
-        count = numeros.count(num)
-        print(f"El número {num} se repite {count} veces en la tupla.")
+        if num not in numeros:
+            print("El número no está en la tupla.")
+        else:
+            count = numeros.count(num)
+            print(f"El número {num} se repite {count} veces en la tupla.")
     except ValueError:
         print("Error: Ingrese un número válido.")
+
+
