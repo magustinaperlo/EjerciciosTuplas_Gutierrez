@@ -21,6 +21,19 @@ while v == True:
         print("Error")
 
         
+#sugerencia
+meses = ("Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre")
+
+while True:
+    num = int(input("Ingrese el número de mes (0 para salir): "))
+
+    if num == 0:
+        break
+
+    if 1 <= num <= len(meses):
+        print(meses[num - 1])
+    else:
+        print("Error: Número de mes inválido")
 
 
 
