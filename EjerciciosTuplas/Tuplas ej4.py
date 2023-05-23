@@ -15,4 +15,20 @@ while True:
         print(tupla_numeros[indice]) 
     else:
         print("Indice no valido")
+        
+   #sugerencia 
+
+tupla_numeros = (1, 2, 3, 4, 5, 6, 7, 8, 9, 10)
+
+while True:
+    indice = int(input("Ingrese un índice (-1 para salir): "))
+    
+    if indice == -1:
+        break
+    
+    if 0 <= indice < len(tupla_numeros):
+        print(tupla_numeros[indice])
+    else:
+        print("Índice no válido")
+
 
